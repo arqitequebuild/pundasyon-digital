@@ -21,7 +21,7 @@ button { font: inherit; }
 .skip-link:focus { top: 16px; }
 .site-header { height: 96px; padding: 0 var(--page-pad); display: flex; align-items: center; justify-content: space-between; position: absolute; z-index: 10; inset: 0 0 auto; color: var(--ivory); border-bottom: 1px solid rgba(238,232,221,.18); }
 .brand { display: inline-flex; align-items: center; gap: 18px; }
-.brand-mark { width: 48px; height: 54px; object-fit: contain; }
+.brand-mark { width: 78px; height: 74px; object-fit: contain; }
 .brand-divider { height: 44px; width: 1px; background: rgba(238,232,221,.7); }
 .brand-name { display: grid; gap: 4px; font-size: 17px; font-weight: 600; letter-spacing: .25em; }
 .brand-digital { color: var(--brass-light); font-size: 12px; letter-spacing: .42em; }
