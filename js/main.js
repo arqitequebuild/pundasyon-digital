@@ -317,8 +317,6 @@
   };
 
   const footerStartBriefBtn = document.getElementById("footer-start-brief-btn");
-  const footerCopyEmailBtn = document.getElementById("footer-copy-email-btn");
-  const footerCopyEmailLabel = document.getElementById("footer-copy-email-label");
   const footerStatusReadout = document.getElementById("footer-status-readout");
 
   const setFooterReadout = (msg) => { if (footerStatusReadout) footerStatusReadout.textContent = msg; };
