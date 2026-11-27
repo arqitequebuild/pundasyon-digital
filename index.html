@@ -8,6 +8,10 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://pundasyondigital.vercel.app/">
 
+  <!-- Favicon & Apple Touch Icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/ltcondbm/image/upload/v1795725819/pundasyon_favicon.png">
+  <link rel="apple-touch-icon" href="https://res.cloudinary.com/ltcondbm/image/upload/v1795725819/pundasyon_favicon.png">
+
   <!-- Open Graph & Social Metadata -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pundasyondigital.vercel.app/">
@@ -138,14 +142,13 @@
     }
 
     .brand-mark {
-      width: 52px;
-      height: 52px;
+      width: 56px;
+      height: 54px;
       flex-shrink: 0;
-      display: grid;
-      place-items: center;
-      border: 1px solid rgba(215, 183, 126, 0.45);
+      object-fit: contain;
       border-radius: var(--radius-sm);
-      background: rgba(33, 31, 27, 0.45);
+      background: rgba(33, 31, 27, 0.35);
+      padding: 4px;
     }
 
     .brand-divider {
@@ -1587,7 +1590,7 @@
 
       .brand-mark {
         width: 42px;
-        height: 42px;
+        height: 40px;
       }
 
       .brand-divider {
@@ -1736,13 +1739,14 @@
   <!-- STICKY HEADER -->
   <header class="site-header" id="site-header">
     <a class="brand" href="#top" aria-label="Pundasyon Digital — Return to top">
-      <span class="brand-mark" aria-hidden="true">
-        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6 26V6H18.5C22.6421 6 26 9.35786 26 13.5C26 17.6421 22.6421 21 18.5 21H11.5" stroke="#d7b77e" stroke-width="1.8"/>
-          <path d="M11.5 11.5H18C19.1046 11.5 20 12.3954 20 13.5C20 14.6046 19.1046 15.5 18 15.5H11.5V11.5Z" fill="#c3a16a"/>
-          <line x1="6" y1="26" x2="26" y2="26" stroke="#eee8dd" stroke-width="1.2" stroke-opacity="0.7"/>
-        </svg>
-      </span>
+      <img
+        class="brand-mark"
+        src="https://res.cloudinary.com/ltcondbm/image/upload/v1795725819/pundasyon_favicon.png"
+        alt="Pundasyon Digital logo mark"
+        width="56"
+        height="54"
+        onerror="this.style.opacity='0.25'"
+      >
       <span class="brand-divider" aria-hidden="true"></span>
       <span class="brand-name">
         <span>PUNDASYON</span>
@@ -1770,34 +1774,52 @@
   <main id="main-content">
     <!-- HERO SECTION -->
     <section class="hero" aria-label="Hero showcase">
-      <!-- Architectural sunset coastal villa fallback artwork if local image is unavailable -->
+      <!-- Architectural sunset coastal resort & glass pavilion scene for rich preview rendering -->
       <svg class="hero-backdrop-fallback" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
         <defs>
           <linearGradient id="skySunset" x1="0%" y1="0%" x2="100%" y2="85%">
             <stop offset="0%" stop-color="#221f1c"/>
-            <stop offset="48%" stop-color="#5a452f"/>
-            <stop offset="82%" stop-color="#b98647"/>
-            <stop offset="100%" stop-color="#d7b77e"/>
+            <stop offset="44%" stop-color="#5a452f"/>
+            <stop offset="78%" stop-color="#b98647"/>
+            <stop offset="100%" stop-color="#dfb978"/>
           </linearGradient>
-          <linearGradient id="poolGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#2b251e"/>
-            <stop offset="65%" stop-color="#8b6738"/>
-            <stop offset="100%" stop-color="#cfa664"/>
+          <linearGradient id="seaGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#2a241d"/>
+            <stop offset="55%" stop-color="#7c5b32"/>
+            <stop offset="100%" stop-color="#d4a965"/>
+          </linearGradient>
+          <linearGradient id="warmInterior" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f5d594" stop-opacity="0.75"/>
+            <stop offset="60%" stop-color="#b68344" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#2a2219" stop-opacity="0.85"/>
           </linearGradient>
         </defs>
         <rect width="1600" height="900" fill="url(#skySunset)"/>
-        <circle cx="1040" cy="430" r="150" fill="#f3cf8d" opacity="0.22"/>
-        <path d="M0 640 Q420 565 860 620 T1600 570 L1600 900 L0 900 Z" fill="url(#poolGlow)"/>
-        <!-- Modern architectural pavilion on the right -->
-        <polygon points="940,210 1600,120 1600,255 940,320" fill="#cbbda6" opacity="0.85"/>
-        <rect x="1030" y="305" width="570" height="335" fill="#1e1a15" opacity="0.72"/>
-        <line x1="1140" y1="305" x2="1140" y2="640" stroke="#d7b77e" stroke-width="2" opacity="0.45"/>
-        <line x1="1265" y1="305" x2="1265" y2="640" stroke="#d7b77e" stroke-width="2" opacity="0.45"/>
-        <line x1="1390" y1="305" x2="1390" y2="640" stroke="#d7b77e" stroke-width="2" opacity="0.45"/>
-        <rect x="920" y="640" width="680" height="260" fill="#d9cbb8" opacity="0.78"/>
+        <!-- Sun & warm horizon haze -->
+        <circle cx="960" cy="445" r="190" fill="#f7d997" opacity="0.24"/>
+        <circle cx="960" cy="445" r="78" fill="#fff0c2" opacity="0.35"/>
+        <!-- Distant coastal hills -->
+        <path d="M520 585 Q690 520 845 568 T1160 555 L1160 630 L520 630 Z" fill="#463b2d" opacity="0.65"/>
+        <!-- Ocean & infinity pool reflection -->
+        <path d="M0 615 Q460 565 920 610 T1600 575 L1600 900 L0 900 Z" fill="url(#seaGlow)"/>
+        <!-- Lush coastal foliage & tree silhouette -->
+        <path d="M0 540 Q130 510 250 590 Q350 660 440 900 L0 900 Z" fill="#232219" opacity="0.88"/>
+        <circle cx="815" cy="440" r="85" fill="#2c291d" opacity="0.72"/>
+        <circle cx="875" cy="475" r="68" fill="#373222" opacity="0.68"/>
+        <circle cx="760" cy="485" r="62" fill="#252318" opacity="0.75"/>
+        <!-- Cantilevered stone pavilion & floor-to-ceiling glass -->
+        <polygon points="940,185 1600,95 1600,248 940,315" fill="#d8cbb6" opacity="0.9"/>
+        <rect x="1030" y="302" width="570" height="338" fill="url(#warmInterior)"/>
+        <rect x="1015" y="302" width="28" height="345" fill="#b8aa94" opacity="0.88"/>
+        <rect x="1155" y="302" width="10" height="338" fill="#1e1a15" opacity="0.85"/>
+        <rect x="1285" y="302" width="10" height="338" fill="#1e1a15" opacity="0.85"/>
+        <rect x="1415" y="302" width="10" height="338" fill="#1e1a15" opacity="0.85"/>
+        <!-- Stone terrace & infinity edge -->
+        <polygon points="720,640 1600,640 1600,900 720,900" fill="#dfd3c0" opacity="0.84"/>
+        <line x1="720" y1="640" x2="1600" y2="640" stroke="#f7dfb0" stroke-width="2" opacity="0.55"/>
       </svg>
 
-      <!-- Primary local hero asset -->
+      <!-- Primary local hero asset (automatically active once assets/images/coastal-resort-hero.png is deployed) -->
       <div class="hero-image" role="img" aria-label="Architectural coastal villa at golden hour overlooking calm water"></div>
       <div class="hero-shade" aria-hidden="true"></div>
 
