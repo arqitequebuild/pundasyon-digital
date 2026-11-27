@@ -1,6 +1,7 @@
 const menuButton = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector("#site-nav");
 const siteHeader = document.querySelector(".site-header");
+const brandLink = document.querySelector(".brand");
 
 const closeMobileMenu = () => {
   if (!menuButton || !siteNav) return;
@@ -17,6 +18,17 @@ if (menuButton && siteNav) {
 
   siteNav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", closeMobileMenu);
+  });
+}
+
+if (brandLink) {
+  brandLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    closeMobileMenu();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (window.location.hash === "#top") {
+      history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
   });
 }
 
