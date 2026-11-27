@@ -161,8 +161,19 @@ h1, h2, h3, p { margin-top: 0; }
 .contact-bottom { padding-top: 18px; border-top: 1px solid rgba(33,31,27,.35); align-items: center; color: rgba(33,31,27,.72); }
 .contact-wordmark { color: var(--ink); font: 600 12px var(--sans); letter-spacing: .2em; }
 .contact-wordmark b { color: var(--ivory); font-weight: 600; margin-left: 8px; }
-.site-footer { min-height: 68px; padding: 20px var(--page-pad); background: var(--ink); color: rgba(238,232,221,.65); display: flex; justify-content: space-between; align-items: center; gap: 20px; font: 9px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
-.footer-brand { color: var(--ivory); }
+.site-footer {
+  min-height: 68px;
+  padding: 20px var(--page-pad);
+  background: var(--ink);
+  color: rgba(238, 232, 221, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font: 9px var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
 
 @media (min-width: 1500px) {
   .hero { min-height: 900px; }
@@ -252,7 +263,7 @@ h1, h2, h3, p { margin-top: 0; }
   .contact h2 { font-size: clamp(48px, 12vw, 68px); }
   .contact-copy { font-size: 12px; }
   .contact-bottom { align-items: flex-start; flex-direction: column; gap: 12px; }
-  .site-footer { min-height: 78px; flex-wrap: wrap; font-size: 8px; }
+  .site-footer { min-height: 78px; font-size: 8px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
