@@ -466,56 +466,54 @@
       <span class="brass-accent">PHT (UTC+8) &middot; GLOBAL REMOTE READY</span>
     </div>
 
-    <div class="footer-lanes">
+        <div class="footer-lanes">
+      <!-- ACTION -->
       <div class="footer-lane" role="region" aria-label="Direct action lane">
-        <div class="lane-header"><span class="lane-label">LANE 01 / ACTION</span><span class="lane-tag">DIRECT ENTRY</span></div>
+        <div class="lane-header">
+          <span class="lane-label">ACTION</span>
+        </div>
         <div class="lane-buttons">
-          <button class="footer-btn footer-btn--primary" type="button" id="footer-start-brief-btn"><span>Start Brief</span><span class="footer-slot-badge">&#8599;</span></button>
-          <button class="footer-btn" type="button" id="footer-copy-email-btn" data-email="hello@pundasyondigital.vercel.app"><span id="footer-copy-email-label">Copy Email</span><span class="footer-slot-badge">UTC+8</span></button>
+          <button class="footer-btn footer-btn--primary" type="button" id="footer-start-brief-btn">
+            <span>Start Brief</span>
+            <span class="footer-slot-badge">&#8599;</span>
+          </button>
+          <button class="footer-btn" type="button" id="footer-copy-email-btn" data-email="hello@pundasyondigital.vercel.app">
+            <span id="footer-copy-email-label">Copy Email</span>
+            <span class="footer-slot-badge">UTC+8</span>
+          </button>
         </div>
       </div>
-      <div class="footer-lane" role="region" aria-label="Legal and governance slot lane">
-        <div class="lane-header"><span class="lane-label">LANE 02 / GOVERNANCE</span><span class="lane-tag">3 READY SLOTS</span></div>
-        <div class="lane-buttons" style="grid-template-columns: repeat(3, 1fr);">
-          <button class="footer-btn footer-slot-trigger" type="button" data-slot="privacy"><span>Privacy</span><span class="footer-slot-badge">SLOT</span></button>
-          <button class="footer-btn footer-slot-trigger" type="button" data-slot="terms"><span>Terms</span><span class="footer-slot-badge">SLOT</span></button>
-          <button class="footer-btn footer-slot-trigger" type="button" data-slot="cookies"><span>Cookies</span><span class="footer-slot-badge">SLOT</span></button>
+
+      <!-- GOVERNANCE -->
+      <div class="footer-lane" role="region" aria-label="Legal and governance lane">
+        <div class="lane-header">
+          <span class="lane-label">GOVERNANCE</span>
+        </div>
+        <div class="lane-buttons" style="display: grid; grid-template-columns: repeat(3, 1fr);">
+          <button class="footer-btn footer-slot-trigger" type="button" data-slot="privacy">
+            <span>Privacy</span>
+          </button>
+          <button class="footer-btn footer-slot-trigger" type="button" data-slot="terms">
+            <span>Terms</span>
+          </button>
+          <button class="footer-btn footer-slot-trigger" type="button" data-slot="cookies">
+            <span>Cookies</span>
+          </button>
         </div>
       </div>
-      <div class="footer-lane" role="region" aria-label="Brand identity asset slot lane">
-        <div class="lane-header"><span class="lane-label">LANE 03 / IDENTITY ASSET</span><span class="lane-tag">ASSET READY</span></div>
-        <div class="lane-buttons" style="grid-template-columns: 1fr;">
-          <button class="footer-btn footer-slot-trigger" type="button" data-slot="brand-mark"><span>Brand Mark &amp; Asset Spec</span><span class="footer-slot-badge">ASSET</span></button>
+
+      <!-- IDENTITY ASSET -->
+      <div class="footer-lane" role="region" aria-label="Brand identity asset lane">
+        <div class="lane-header">
+          <span class="lane-label">IDENTITY ASSET</span>
+        </div>
+        <div class="lane-buttons" style="display: grid; grid-template-columns: 1fr;">
+          <button class="footer-btn footer-slot-trigger" type="button" data-slot="brand-mark">
+            <span>Asset Spec</span>
+          </button>
         </div>
       </div>
     </div>
-
-    <div class="footer-bottom-bar">
-      <span>&copy; <span id="year">2026</span> PUNDASYON DIGITAL</span>
-      <span class="footer-status-readout" id="footer-status-readout" role="status" aria-live="polite">ALL SLOTS WIRED &middot; READY FOR STEP-BY-STEP ASSETS</span>
-    </div>
-  </footer>
-
-  <!-- MODALS -->
-  <div class="modal-backdrop" id="case-modal" role="dialog" aria-modal="true" aria-labelledby="modal-case-title" hidden>
-    <div class="modal-dialog">
-      <div class="modal-top">
-        <span class="eyebrow" id="modal-case-kicker" style="color: var(--brass-deep);">CASE ARCHITECTURE</span>
-        <button class="modal-close" type="button" id="modal-close-btn" aria-label="Close case study details">Close &#10005;</button>
-      </div>
-      <div class="modal-body" id="modal-case-content"></div>
-    </div>
-  </div>
-
-  <div class="modal-backdrop" id="slot-modal" role="dialog" aria-modal="true" aria-labelledby="slot-modal-title" hidden>
-    <div class="modal-dialog">
-      <div class="modal-top">
-        <span class="eyebrow" id="slot-modal-kicker" style="color: var(--brass-deep);">READY SLOT</span>
-        <button class="modal-close" type="button" id="slot-modal-close-btn" aria-label="Close slot drawer">Close &#10005;</button>
-      </div>
-      <div class="modal-body" id="slot-modal-content"></div>
-    </div>
-  </div>
 
   <!-- EXTERNAL JAVASCRIPT -->
   <script src="./js/main.js" defer></script>
