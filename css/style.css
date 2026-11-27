@@ -327,8 +327,8 @@ h2.display-heading em { color: var(--brass-deep); font-style: italic; }
   padding: 24px; 
   display: flex; 
   flex-direction: column; 
-  justify-content: space-between; 
-  gap: 20px; 
+  justify-content: flex-start;
+  gap: 24px; 
 }
 
 .lane-header { 
@@ -392,7 +392,8 @@ h2.display-heading em { color: var(--brass-deep); font-style: italic; }
   color: var(--ink); 
   border-color: var(--brass-light); 
   font-weight: 600; 
-  flex: 1 1 100%; 
+  width: 100%;
+  justify-content: space-between;
 }
 .footer-btn--primary:hover { 
   background: var(--ivory); 
