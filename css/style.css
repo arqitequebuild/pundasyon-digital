@@ -37,7 +37,7 @@ body {
 }
 
 a { color: inherit; text-decoration: none; }
-button, input, select, textarea { font: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; }
 :focus-visible { outline: 2px solid var(--brass-light); outline-offset: 3px; }
 
@@ -171,7 +171,7 @@ h2.display-heading em { color: var(--brass-deep); font-style: italic; }
 .case-footer { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-top: 16px; border-top: 1px solid rgba(33, 31, 27, 0.12); }
 .case-outcome-pill { font-family: var(--mono); font-size: 10px; color: var(--ink); font-weight: 500; }
 
-/* 🚨 NUCLEAR FIX FOR CASE STUDY BUTTONS 🚨 */
+/* 🚨 FIX: FORCES BUTTONS TO HAVE VISIBLE TEXT */
 .case-trigger { 
   background: #211f1b !important; 
   border: 1px solid #211f1b !important; 
@@ -371,7 +371,7 @@ h2.display-heading em { color: var(--brass-deep); font-style: italic; }
   align-items: stretch;
 }
 
-/* 🚨 NUCLEAR FIX FOR FOOTER BUTTONS 🚨 */
+/* 🚨 FIX: FORCES FOOTER BUTTONS TO HAVE VISIBLE TEXT */
 .footer-btn { 
   flex: 1 1 auto; 
   min-height: 48px; 
