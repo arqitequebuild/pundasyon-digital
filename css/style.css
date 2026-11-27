@@ -53,7 +53,7 @@ button { font: inherit; }
 .menu-toggle { display: none; }
 
 .hero { min-height: min(850px, 100svh); min-height: max(720px, 100svh); position: relative; overflow: hidden; display: flex; align-items: center; color: var(--ivory); background: #27231e; }
-.hero-image { position: absolute; inset: 0; background-image: url("../assets/images/coastal-resort-hero.webp"); background-size: cover; background-position: center right; transform: scale(1.015); }
+.hero-image { position: absolute; inset: 0; background-image: url("../assets/images/coastal-resort-hero.png"); background-size: cover; background-position: center right; transform: scale(1.015); }
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(29,27,23,.94) 0%, rgba(34,31,26,.82) 34%, rgba(34,31,26,.34) 63%, rgba(24,22,18,.08) 100%), linear-gradient(0deg, rgba(20,19,16,.42), transparent 28%, rgba(20,19,16,.18)); }
 .hero-audience { position: absolute; top: 139px; right: var(--page-pad); display: flex; align-items: center; gap: 22px; }
 .gold-rule { width: 64px; height: 1px; background: var(--brass-light); }
@@ -96,7 +96,7 @@ h1, h2, h3, p { margin-top: 0; }
 .underlined-link span { color: #a98b5a; margin-left: 14px; }
 
 .audience-section { position: relative; min-height: 730px; color: var(--ivory); background: #28251f; overflow: hidden; }
-.audience-image { position: absolute; inset: 0; background: url("../assets/images/coastal-resort-hero.webp") center 54% / cover; filter: saturate(.7); }
+.audience-image { position: absolute; inset: 0; background: url("../assets/images/coastal-resort-hero.png") center 54% / cover; filter: saturate(.7); }
 .audience-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(27,25,21,.94), rgba(27,25,21,.78) 56%, rgba(27,25,21,.48)), linear-gradient(0deg, rgba(27,25,21,.65), transparent); }
 .audience-inner { position: relative; z-index: 1; padding: 100px var(--page-pad) 90px; }
 .audience-inner > .eyebrow { color: var(--brass-light); margin-bottom: 25px; }
@@ -130,7 +130,7 @@ h1, h2, h3, p { margin-top: 0; }
 .service-card + .service-card .service-meta { left: 28px; }
 
 .statement { min-height: 600px; position: relative; display: flex; align-items: center; overflow: hidden; color: var(--ivory); background: #24221d; }
-.statement-image { position: absolute; inset: 0; background: url("../assets/images/coastal-resort-hero.webp") center 60% / cover; filter: saturate(.55); }
+.statement-image { position: absolute; inset: 0; background: url("../assets/images/coastal-resort-hero.png") center 60% / cover; filter: saturate(.55); }
 .statement::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(28,26,22,.94), rgba(28,26,22,.78) 60%, rgba(28,26,22,.3)); }
 .statement-content { position: relative; z-index: 2; padding: 100px var(--page-pad); max-width: 1050px; }
 .statement-content .eyebrow { color: var(--brass-light); }
