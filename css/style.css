@@ -345,13 +345,6 @@ h2.display-heading em { color: var(--brass-deep); font-style: italic; }
   color: var(--brass-light); 
   font-weight: 500;
 }
-.lane-tag { 
-  font-family: var(--mono); 
-  font-size: 9px; 
-  letter-spacing: 0.1em; 
-  text-transform: uppercase; 
-  color: rgba(238, 232, 221, 0.45); 
-}
 
 .lane-buttons { 
   display: flex; 
@@ -360,14 +353,15 @@ h2.display-heading em { color: var(--brass-deep); font-style: italic; }
   align-items: stretch;
 }
 
+/* FORCES VISIBILITY ON ALL FOOTER BUTTONS */
 .footer-btn { 
   flex: 1 1 auto; 
   min-height: 48px; 
   padding: 10px 16px; 
   border-radius: var(--radius-sm); 
-  border: 1px solid rgba(238, 232, 221, 0.22); 
-  background: rgba(33, 31, 27, 0.6); 
-  color: var(--ivory); 
+  border: 1px solid rgba(238, 232, 221, 0.3); 
+  background: rgba(238, 232, 221, 0.05); 
+  color: var(--ivory) !important; 
   font-family: var(--mono); 
   font-size: 10px; 
   letter-spacing: 0.08em; 
@@ -383,22 +377,36 @@ h2.display-heading em { color: var(--brass-deep); font-style: italic; }
 .footer-btn:hover { 
   transform: translateY(-2px); 
   border-color: var(--brass-light); 
-  background: rgba(215, 183, 126, 0.08);
-  color: var(--brass-light); 
+  background: rgba(215, 183, 126, 0.12);
+  color: var(--brass-light) !important; 
 }
 
 .footer-btn--primary { 
   background: var(--brass-light); 
-  color: var(--ink); 
+  color: var(--ink) !important; 
   border-color: var(--brass-light); 
   font-weight: 600; 
   width: 100%;
   justify-content: space-between;
 }
+
 .footer-btn--primary:hover { 
   background: var(--ivory); 
-  color: var(--ink); 
+  color: var(--ink) !important; 
   border-color: var(--ivory); 
+}
+
+.footer-btn--outline {
+  background: transparent;
+  border: 1px solid rgba(238, 232, 221, 0.3);
+  color: var(--ivory) !important;
+  justify-content: center;
+}
+
+.footer-btn--outline:hover {
+  background: rgba(238, 232, 221, 0.08);
+  border-color: var(--brass-light);
+  color: var(--brass-light) !important;
 }
 
 .footer-slot-badge { 
